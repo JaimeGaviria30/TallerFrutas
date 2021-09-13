@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnVentaF"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Ventas"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProductoF" />
+
+    <Button
+        android:id="@+id/btnVenAddF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toEndOf="@+id/btnVentaF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnEmpleados"
+        android:layout_width="156dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Listado de empleados"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVentaF" />
+
+    <Button
+        android:id="@+id/btnEditVenF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:text="/"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toEndOf="@+id/btnVenAddF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnDelVenF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="?attr/colorError"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toEndOf="@+id/btnEditVenF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnDelProdF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="?attr/colorError"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toEndOf="@+id/btnEditProdF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnProductoF"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Productos"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminF" />
+
+    <Button
+        android:id="@+id/btnEditProdF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:text="/"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toEndOf="@+id/btnProdAddF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnProdAddF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toEndOf="@+id/btnProductoF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnDelAdmF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="?attr/colorError"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnEditAdmF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnEditAdmF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:text="/"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAdmAddF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnAdmAddF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnAdminF"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Administrar"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
